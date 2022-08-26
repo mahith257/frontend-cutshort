@@ -1,0 +1,28 @@
+.plans {
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.single-plan {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.blue {
+    border: 2px solid #5b5beb;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: gray;
+    margin-top: 0;
+}

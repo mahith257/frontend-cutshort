@@ -1,0 +1,59 @@
+.steps {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.single-step {
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.blue-bg {
+  background-color: #5b5beb;
+  color: white;
+}
+
+/* .blue-line {
+  color: #5b5beb;
+  background-color: #5b5beb;
+  height: 2px;
+  border-width: 0;
+} */
+
+button {
+  font-family: "Inter";
+}
+
+hr {
+    background-color: lightgray;
+    border: none;
+    display: block;
+    height: 2px;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+}
+
+.blue-line:before {
+    background-color: #5b5beb;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    /* top: -2px; */
+    width: 50%;
+    z-index: 1;
+}
+
+.full-line {
+  background-color: #5b5beb
+}

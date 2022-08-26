@@ -1,0 +1,48 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    width: 100%;
+}
+
+label > span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+label > input {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #5b5beb;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
