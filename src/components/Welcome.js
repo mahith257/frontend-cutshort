@@ -1,7 +1,7 @@
-import { Typography } from '@mui/material';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useEdenContext } from '../context/EdenContext';
+import Heading from './Heading';
 import './Welcome.css'
 
 export default function Welcome({ changeStep }) {
@@ -19,8 +19,7 @@ export default function Welcome({ changeStep }) {
     }
     return (
         <div className='welcome'>
-            <Typography variant='h4' sx={{fontWeight: "750", fontSize: "28px", fontFamily: "Inter"}}>Welcome! First things first...</Typography>
-            <Typography variant='subtitle2' sx={{ color: "gray", fontFamily: "Inter" }}>You can always change them later.</Typography>
+            <Heading header='Welcome! First things first...' subtitle='You can always change them later.' />
             <form onSubmit={handleSubmit}>
                 <label>
                     <span>Full Name</span>

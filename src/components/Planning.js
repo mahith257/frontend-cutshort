@@ -1,8 +1,8 @@
 import { Person, Groups } from '@mui/icons-material';
-import { Typography } from '@mui/material';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useEdenContext } from '../context/EdenContext';
+import Heading from './Heading';
 import './Planning.css'
 
 export default function Planning({ changeStep }) {
@@ -21,8 +21,7 @@ export default function Planning({ changeStep }) {
 
     return (
         <div className='welcome'>
-            <Typography variant='h4' sx={{fontWeight: "750", fontSize: "28px", fontFamily: "Inter"}}>How are you planning to use Eden?</Typography>
-            <Typography variant='subtitle2' sx={{ color: "gray" }}>We'll streamline your setup experience accordingly.</Typography>
+            <Heading header='How are you planning to use Eden?' subtitle="We'll streamline your setup experience accordingly." />
             <div className='plans'>
                 <div className={`single-plan ${plan === "For myself" ? "blue" : ""}`} onClick={() => setPlan('For myself')}>
                     <Person />

@@ -1,7 +1,7 @@
-import { Typography } from '@mui/material';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useEdenContext } from '../context/EdenContext';
+import Heading from './Heading';
 import './Workspace.css'
 
 export default function Workspace({ changeStep }) {
@@ -19,8 +19,7 @@ export default function Workspace({ changeStep }) {
     }
     return (
         <div className='welcome'>
-            <Typography variant='h4' sx={{fontWeight: "750", fontSize: "28px", fontFamily: "Inter"}}>Lets set up a home for all your work</Typography>
-            <Typography variant='subtitle2' sx={{ color: "gray" }}>You can always create another workspace later.</Typography>
+            <Heading header='Lets set up a home for all your work' subtitle='You can always create another workspace later.' />
             <form onSubmit={handleSubmit}>
                 <label>
                     <span>Workspace Name</span>

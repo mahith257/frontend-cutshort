@@ -14,6 +14,8 @@ label > span {
     margin-bottom: 5px;
     font-size: 12px;
     font-weight: 600;
+    font-family: "Inter";
+    color: rgb(54, 54, 54);
 }
 
 form {
@@ -34,15 +36,21 @@ label > input {
     width: 100%;
 }
 
+::placeholder {
+    color: rgb(174, 169, 169);
+    font-weight: 530;
+}
+
 button {
     width: 100%;
     padding: 15px 0;
     border-radius: 5px;
     border: none;
     background-color: #5b5beb;
-    color: #fff;
+    color: whitesmoke;
     font-size: 12px;
     font-weight: 500;
+    font-family: "Inter";
     cursor: pointer;
 }
 

@@ -23,3 +23,7 @@
     box-sizing: border-box;
     width: 100%;
 }
+
+.optional {
+    color: lightgray;
+}
